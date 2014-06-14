@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm\Algorithm.csproj", "{32898DDB-69EA-44E5-B15C-A1C4EC928DB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Tests", "Algorithm.Tests\Algorithm.Tests.csproj", "{523A600C-AD09-4095-AB10-086DAD8C042D}"
@@ -10,10 +12,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.txt = README.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "original", "original", "{96C5F796-A1E3-44E8-BBB9-B17611416721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "refactored", "refactored", "{50F035AA-6AF3-43BD-92A9-E6177860393C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmRefactored", "AlgorithmRefactored\Algorithm\AlgorithmRefactored.csproj", "{FEAB4D2C-6A5A-4E52-B5FB-ECF52DCD33D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmRefactored.Tests", "AlgorithmRefactored.Tests\AlgorithmRefactored.Tests.csproj", "{B7270925-101B-4981-A2AC-7BB7B72ABB9A}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = Algorithm.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -27,8 +34,25 @@ Global
 		{523A600C-AD09-4095-AB10-086DAD8C042D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{523A600C-AD09-4095-AB10-086DAD8C042D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{523A600C-AD09-4095-AB10-086DAD8C042D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEAB4D2C-6A5A-4E52-B5FB-ECF52DCD33D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEAB4D2C-6A5A-4E52-B5FB-ECF52DCD33D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEAB4D2C-6A5A-4E52-B5FB-ECF52DCD33D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEAB4D2C-6A5A-4E52-B5FB-ECF52DCD33D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7270925-101B-4981-A2AC-7BB7B72ABB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7270925-101B-4981-A2AC-7BB7B72ABB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7270925-101B-4981-A2AC-7BB7B72ABB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7270925-101B-4981-A2AC-7BB7B72ABB9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32898DDB-69EA-44E5-B15C-A1C4EC928DB9} = {96C5F796-A1E3-44E8-BBB9-B17611416721}
+		{523A600C-AD09-4095-AB10-086DAD8C042D} = {96C5F796-A1E3-44E8-BBB9-B17611416721}
+		{FEAB4D2C-6A5A-4E52-B5FB-ECF52DCD33D2} = {50F035AA-6AF3-43BD-92A9-E6177860393C}
+		{B7270925-101B-4981-A2AC-7BB7B72ABB9A} = {50F035AA-6AF3-43BD-92A9-E6177860393C}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Algorithm.vsmdi
 	EndGlobalSection
 EndGlobal
